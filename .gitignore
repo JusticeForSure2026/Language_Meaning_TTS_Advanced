@@ -1,0 +1,7 @@
+.venv/
+venv/
+.idea/
+executable/
+*.zip
+tts_models/
+ffmpeg-8.0-essentials_build/
