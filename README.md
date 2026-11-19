@@ -44,18 +44,19 @@ You can make the words repeat as many times as you want and set your preferred p
 ## 📥 How to Use (Choose Your Option)
 
 ### Option 1: If you just want to study by yourself
-* 📥 Download the **"Language Meaning TTS Advanced (Windows).zip"** under the 📂 "executable" folder, decompress the zip file and run **"Language Meaning TTS Advanced.exe"** directly. 
+* 📥 Download on Gumroad: 
 
 > ℹ️ **Note:** Currently fully tested for Windows. The macOS version remains untested.
 
 ### Option 2: If you want to modify or compile the program 
 
 🧑‍💻 Compile the executable file on Windows:
-1. Open PyCharm terminal in the project root directory and run:
+1. Download and install PyCharm: https://www.jetbrains.com/pycharm/download/
+2. Open PyCharm terminal in the project root directory and run:
 ```bash
 .\.venv\Scripts\python.exe -m PyInstaller --clean --noconsole --onedir --icon=language_meaning_tts_advanced_icon.ico --collect-all sherpa_onnx --collect-all soundfile --collect-all sounddevice --hidden-import=scipy.signal --hidden-import=pythoncom --add-data "language_meaning_tts_advanced_icon.ico;." --add-data "ffmpeg-8.0-essentials_build/bin/ffmpeg.exe;ffmpeg-8.0-essentials_build/bin" --add-data "tts_models;tts_models" main.py
 ```
-2. Find your standalone application in the `dist` folder.
+3. Find your standalone application in the `dist` folder.
 
 
 ## 📝 Credits & License
